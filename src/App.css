@@ -1,6 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 
-.div-container {
+*,
+*::beforem,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(to right, #dd0426, #f02d3a);
+}
+
+/* .div-container {
   font-family: "Orbitron", sans-serif;
   height: 100vh;
   display: flex;
@@ -21,6 +32,7 @@
 }
 
 .calculator-screen {
+  text-align: end;
   width: 95%;
   height: 4rem;
   font-size: 1.5rem;
@@ -57,4 +69,4 @@ li {
 li:active {
   box-shadow: inset 5px 5px 10px -3px #528f8b;
   outline: none;
-}
+} */
