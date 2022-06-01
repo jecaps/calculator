@@ -1,14 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 
-*,
-*::beforem,
-*::after {
-  box-sizing: border-box;
-}
+@layer component {
+  .calculator-grid > button {
+    @apply bg-white-trans cursor-pointer text-2 border border-white;
+  }
 
-body {
-  margin: 0;
-  background: linear-gradient(to right, #dd0426, #f02d3a);
+  .calculator-grid > button:hover,
+  .calculator-grid > button:focus {
+    @apply bg-white-hover;
+  }
+
+  .span-two {
+    @apply col-span-2;
+  }
 }
 
 /* .div-container {

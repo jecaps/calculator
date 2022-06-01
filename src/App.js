@@ -1,35 +1,34 @@
-import { useState } from "react";
-// import "./App.css";
+// import { useState } from "react";
+import "./App.css";
 
 export default function App() {
   return (
-    <div className="calculator-grid grid mt-8 grid-cols-4 gap-0.5">
-      <div className="calculator-screen col-span-full">
-        <div className="equation bg-screen text-white">ghrh</div>
-        <div className="result bg-screen text-whiter">fghfdg</div>
+    <div className="calculator-grid grid mt-8 grid-cols-4 grid-rows-7 justify-center">
+      <div className="calculator-screen col-span-full bg-screen flex flex-col items-end justify-around p-3 break-all">
+        <div className="equation text-white text-1.5">576465 +</div>
+        <div className="result text-white-pure text-2.5">132135466541</div>
       </div>
-
-      <button className="span-two col-span-2 bg-button">AC</button>
-      <button className="span-two col-span-2 bg-button">DEL</button>
-      <button className="bg-button">(</button>
-      <button className="bg-button">)</button>
-      <button className="bg-button">exp</button>
-      <button className="bg-button">÷</button>
-      <button className="bg-button">7</button>
-      <button className="bg-button">8</button>
-      <button className="bg-button">9</button>
-      <button className="bg-button">×</button>
-      <button className="bg-button">4</button>
-      <button className="bg-button">5</button>
-      <button className="bg-button">6</button>
-      <button className="bg-button">+</button>
-      <button className="bg-button">1</button>
-      <button className="bg-button">2</button>
-      <button className="bg-button">3</button>
-      <button className="bg-button">-</button>
-      <button className="bg-button">.</button>
-      <button className="bg-button">0</button>
-      <button className="span-two col-span-2 bg-button">=</button>
+      <button className="span-two ">AC</button>
+      <button className="span-two ">DEL</button>
+      <button className="">(</button>
+      <button className="">)</button>
+      <button className="">exp</button>
+      <button className="">÷</button>
+      <button className="">7</button>
+      <button className="">8</button>
+      <button className="">9</button>
+      <button className="">×</button>
+      <button className="">4</button>
+      <button className="">5</button>
+      <button className="">6</button>
+      <button className="">+</button>
+      <button className="">1</button>
+      <button className="">2</button>
+      <button className="">3</button>
+      <button className="">-</button>
+      <button className="">.</button>
+      <button className="">0</button>
+      <button className="span-two">=</button>
     </div>
   );
 }
