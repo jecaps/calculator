@@ -8,6 +8,7 @@ module.exports = {
       button: "#F4F4F4",
       "white-trans": "rgba(255, 255, 255, .75)",
       "white-hover": "rgba(255, 255, 255, .9)",
+      "dark-blue": "#011627",
     },
     fontSize: {
       1.5: "1.5rem",
