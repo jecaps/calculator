@@ -1,11 +1,11 @@
 const data = [
   {
     text: "AC",
-    classname: "span-two clear",
+    classname: "clear",
   },
   {
     text: "DEL",
-    classname: "span-two delete",
+    classname: "delete",
   },
   {
     text: "(",
@@ -81,7 +81,7 @@ const data = [
   },
   {
     text: "=",
-    classname: "span-two equals",
+    classname: "equals",
   },
 ];
 
