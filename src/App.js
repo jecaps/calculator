@@ -28,7 +28,7 @@ export default function App() {
         setFormula(`${formula} * `);
         break;
       case "=":
-        setResult(eval(formula));
+        setResult(eval(formula).toLocaleString("en"));
         break;
       case "EXP":
         setScreenFormula(`${screenFormula} ^ `);
