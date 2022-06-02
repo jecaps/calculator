@@ -6,7 +6,7 @@ export default function Button(props) {
           ? `${props.classname} span-two`
           : props.classname
       }
-      onClick={props.text === "=" ? props.getResult : props.btnSelector}
+      onClick={props.btnSelector}
     >
       {props.text}
     </button>

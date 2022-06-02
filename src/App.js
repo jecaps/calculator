@@ -27,6 +27,9 @@ export default function App() {
         setScreenFormula(`${screenFormula} ${btnText} `);
         setFormula(`${formula} * `);
         break;
+      case "=":
+        setResult(eval(formula));
+        break;
       case "EXP":
         setScreenFormula(`${screenFormula} ^ `);
         setFormula(`${formula} ** `);
@@ -46,17 +49,12 @@ export default function App() {
     }
   }
 
-  function getResult() {
-    setResult(eval(formula));
-  }
-
   const btnEl = data.map((btn) => {
     return (
       <Button
         key={Math.random() * 1000}
         text={btn.text}
         classname={btn.classname}
-        getResult={() => getResult()}
         btnSelector={() => btnSelector(`.${btn.classname}`)}
       />
     );
