@@ -13,14 +13,17 @@ module.exports = {
     fontSize: {
       1.5: "1.5rem",
       2: "2rem",
-      2.5: "2.5rem",
+      3.5: "3.5rem",
+      4: "4rem",
+      5: "5rem",
+      6: "6rem",
     },
     extend: {
       gridTemplateRows: {
-        7: "minmax(7rem, auto) repeat(6, 4rem)",
+        7: "minmax(15rem, auto) repeat(6, 10rem)",
       },
       gridTemplateColumns: {
-        4: "repeat(4, 6rem)",
+        4: "repeat(4, 22%)",
       },
     },
   },

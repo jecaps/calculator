@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Button from "./Button";
 import data from "./data";
-import "./App.css";
 
 export default function App() {
   const [formula, setFormula] = useState("");
@@ -28,6 +27,8 @@ export default function App() {
         setFormula(`${formula} * `);
         break;
       case "=":
+        setScreenFormula("");
+        setFormula("");
         setResult(eval(formula).toLocaleString("en"));
         break;
       case "EXP":
@@ -61,10 +62,10 @@ export default function App() {
   });
 
   return (
-    <div className="calculator-grid grid mt-8 grid-cols-4 grid-rows-7 justify-center">
-      <div className="calculator-screen col-span-full bg-screen flex flex-col items-end justify-around p-3 break-all">
-        <div className="equation text-white text-1.5">{screenFormula}</div>
-        <div className="result text-white-pure text-2.5">{result}</div>
+    <div className="grid mt-8 grid-cols-4 grid-rows-7 justify-center">
+      <div className="col-span-full bg-screen flex flex-col items-end justify-around px-6 break-all">
+        <div className="equation text-white text-3.5">{screenFormula}</div>
+        <div className="result text-white-pure text-5">{result}</div>
       </div>
 
       {btnEl}
