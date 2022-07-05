@@ -27,7 +27,7 @@ export default function App() {
         setFormula(`${formula} * `);
         break;
       case "=":
-        setScreenFormula("");
+        // setScreenFormula("");
         setFormula("");
         setResult(eval(formula).toLocaleString("en"));
         break;
@@ -62,12 +62,11 @@ export default function App() {
   });
 
   return (
-    <div className="grid mt-8 grid-cols-4 grid-rows-7 justify-center">
+    <div className="grid mt-8 grid-cols-4 grid-rows-7 justify-center w-[44rem] m-auto">
       <div className="col-span-full bg-screen flex flex-col items-end justify-around px-6 break-all">
-        <div className="equation text-white text-3.5">{screenFormula}</div>
-        <div className="result text-white-pure text-5">{result}</div>
+        <div className="equation text-white text-2">{screenFormula}</div>
+        <div className="result text-white-pure text-3.5">{result}</div>
       </div>
-
       {btnEl}
     </div>
   );
